@@ -36,7 +36,6 @@ function Study({ currentDeck, currentCards }) {
     
 
     if (currentDeck && currentCards) {
-        console.log(currentCardId, currentCards.length);
         if (currentCards.length >= 3) {
             if (isFront === true){
                 return (
@@ -44,6 +43,7 @@ function Study({ currentDeck, currentCards }) {
                         <div className="col">
                             <div className="row">
                                 <h2>{`Study: ${currentDeck.name}`}</h2>
+                                <p>{currentDeck.name}</p>
                             </div>
                             <div className="row border">
                                 <div className="col">

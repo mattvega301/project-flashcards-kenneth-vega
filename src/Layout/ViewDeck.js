@@ -19,7 +19,6 @@ function ViewDeck(){
     useEffect(() => {
         async function setDeck() {
             let data = await readDeck(Number(deckId));
-            console.log(data);
             setCurrentDeck(data);
             setCurrentCards(data.cards);
         }
@@ -45,7 +44,6 @@ function ViewDeck(){
         }
     }
 
-    console.log(pathArray);
     return(
         <div>
             <div className="row bg-light p-2">

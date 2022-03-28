@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Link, useParams } from "react-router-dom";
 import { updateCard } from "../utils/api";
@@ -6,12 +6,18 @@ import { updateCard } from "../utils/api";
 function EditCard({ currentDeck, setCurrentDeck }) {
     let { cardId } = useParams();
     let history = useHistory();
-    let [currentCard, setCurrentCard] = useState(currentDeck.cards.find((card) => card.id === Number(cardId)));
+    let [currentCard, setCurrentCard] = useState([]);
 
+    
+    useEffect(() => {
+        let data = currentDeck.cards ? currentDeck.cards.find((card) => card.id === Number(cardId)) : [];
+        setCurrentCard(data);
+    }, [cardId, currentDeck.cards]);
+    
     if (currentDeck.cards){
 
 
-    
+        
     
     
     

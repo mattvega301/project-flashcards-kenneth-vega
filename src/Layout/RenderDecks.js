@@ -23,7 +23,6 @@ function RenderDecks() {
         fetchDecks();
     }, []);
 
-    console.log(results);
     if (results){ 
         return results.map((deck) => {
           
