@@ -14,8 +14,6 @@ function AddCard({ currentDeck }) {
     return (
         <div className="container col-12 mt-4">
         <h2 className="mb-2">{currentDeck.name}: Add Card</h2>
-        <p>{currentDeck.name}</p>
-        <p>Add Card</p>
         <form onSubmit={submitHandler}>
           <div>
               <label htmlFor="name" >Front</label>

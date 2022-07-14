@@ -43,7 +43,6 @@ function Study({ currentDeck, currentCards }) {
                         <div className="col">
                             <div className="row">
                                 <h2>{`Study: ${currentDeck.name}`}</h2>
-                                <p>{currentDeck.name}</p>
                             </div>
                             <div className="row border">
                                 <div className="col">
@@ -62,7 +61,6 @@ function Study({ currentDeck, currentCards }) {
                         <div className="col">
                             <div className="row">
                                 <h2>{`Study: ${currentDeck.name}`}</h2>
-                                <p>{currentDeck.name}</p>
                             </div>
                             <div className="row border">
                                 <div className="col">
@@ -88,7 +86,6 @@ function Study({ currentDeck, currentCards }) {
                         <div className="row">
                             <div className="col">
                                 <h2>{`Study: ${currentDeck.name}`}</h2>
-                                <p>{currentDeck.name}</p>
                             </div>
                         </div>
                         <div className="row">
